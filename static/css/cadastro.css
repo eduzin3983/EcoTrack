@@ -1,0 +1,135 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Fundo com efeito de cor nos cantos */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at top left, #02772b 40%, #f2e205 90%);
+}
+
+/* Container do cadastro */
+.cadastro-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* Caixa do cadastro */
+.cadastro-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Logo */
+.logo img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    color: #004D40;
+    font-weight: 700;
+}
+
+/* Título */
+h2 {
+    margin: 1.2rem 0;
+    color: #000000;
+}
+
+/* Campos de entrada */
+.input-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+/* Labels animadas */
+.floating-label {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: #365942;
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+    opacity: 0.8;
+}
+
+/* Inputs */
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #365942;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* Efeito quando o input é focado */
+.input-group input:focus {
+    border-color: #F2A341;
+}
+
+/* Animação da label subindo letra por letra */
+.floating-label.ativo {
+    top: -10px;
+    font-size: 0.9rem;
+    color: #F2A341;
+    animation: subirLabel 0.4s ease-in-out forwards;
+}
+
+@keyframes subirLabel {
+    0% { letter-spacing: 0px; opacity: 0; }
+    100% { letter-spacing: 2px; opacity: 1; }
+}
+
+/* Botão de cadastro */
+.btn-primary {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #244630;
+    transform: scale(1.05);
+}
+
+/* Link para login */
+.login-link {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #000000;
+}
+
+.login-link a {
+    color: #F2A341;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
