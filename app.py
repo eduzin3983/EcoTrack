@@ -34,6 +34,10 @@ def registrar():
 def sugestoes():
     return render_template('sugestoes.html')
 
+@app.route('/historico')
+def sugestoes():
+    return render_template('historico.html')
+
 # Rotas de erro
 # Tratamento para erro 404 - Página não encontrada
 @app.errorhandler(400)
