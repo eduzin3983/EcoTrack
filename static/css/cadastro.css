@@ -133,3 +133,38 @@ h2 {
 .login-link a:hover {
     text-decoration: underline;
 }
+/* Botão de voltar para home */
+.btn-home {
+    position: fixed;
+    top: 20px;  /* Move o botão para o topo */
+    left: 20px; /* Mantém no canto esquerdo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px; /* Texto um pouco maior */
+    transition: 0.3s ease-in-out;
+}
+
+.btn-home img {
+    width: 60px; /* Ícone maior */
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-in-out;
+}
+
+.btn-home:hover img {
+    background-color: #ddd;
+    transform: scale(1.1);
+}
+
+.btn-home span {
+    margin-top: 8px;
+    font-size: 20px; /* Ajuste fino do texto */
+    color: #ffffff;
+}

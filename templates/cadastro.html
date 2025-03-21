@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="/static/css/cadastro.css">
 </head>
 <body>
+    <!-- Botão de voltar para Home -->
+    <a href="/" class="btn-home">
+    <img src="/static/img/index/home.png" alt="Ícone Home">
+    <span>Home</span>
+    </a>
     <div class="cadastro-container">
         <div class="cadastro-box">
             <div class="logo">
@@ -22,7 +27,7 @@
 
                 <div class="input-group">
                     <label for="email" class="floating-label">E-mail</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email"  required>
                 </div>
 
                 <div class="input-group">
@@ -37,9 +42,12 @@
 
                 <button type="submit" class="btn-primary">Cadastrar</button>
             </form>
+
+            
+
             <p class="login-link">Já tem uma conta? <a href="/login">Faça login</a></p>
         </div>
     </div>
-    <script src="/static/js/cadastro.js"></script> <!-- Chama o JavaScript -->
+    <script src="/static/js/cadastro.js"></script>
 </body>
 </html>
