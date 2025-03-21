@@ -30,7 +30,11 @@ body {
     font-size: 16px; /* Texto um pouco maior */
     transition: 0.3s ease-in-out;
 }
-
+.home-btn span{
+    color: aliceblue;
+    margin-top: 8px;
+    font-size: 20px;
+}
 .home-btn img {
         width: 60px; /* Ícone maior */
         height: 60px;
@@ -44,6 +48,7 @@ body {
 .home-btn:hover {
     transform: scale(1.1);
     color: #F2A341;
+    
 }
 
 /* Container do login */
