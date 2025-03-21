@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>EcoTrack - Sugestões</title>
+  <link rel="icon" type="image/png" href="/static/img/index/icone-planeta.png">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
+
+  <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="stylesheet" href="/static/css/sugestoes.css">
+</head>
+<body>
+  <!-- Cabeçalho (Header) -->
+  <header>
+    <div class="logo">
+      <a href="/dashboard" class="logo-link">
+        <img src="/static/img/index/icone-planeta.png" alt="Ícone de planeta" class="logo-icon">
+        <h1>EcoTrack</h1>
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/dashboard">Dashboard</a></li>
+        <li><a href="/registro">Registrar</a></li>
+        <li><a href="/historico">Histórico</a></li>
+        <li><a href="/sugestoes" class="active">Sugestões</a></li>
+        <li><a href="/logout" class="btn-primary">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main>
+    <section class="sugestoes-container">
+      <h2>Sugestões de Melhoria</h2>
+      <p>Com base nos seus registros, selecionamos algumas dicas para tornar seu dia a dia mais sustentável.</p>
+      
+      <div class="sugestoes-grid">
+        <!-- Card de Sugestão 1 -->
+        <div class="sugestao-card">
+          <img src="/static/img/sugestoes/icone-agua.webp" alt="Dica sobre água">
+          <h3>Economize Água</h3>
+          <p>
+            Reduza o tempo de banho e verifique vazamentos em torneiras e chuveiros. Pequenas mudanças podem fazer grande diferença no seu consumo.
+          </p>
+        </div>
+
+        <!-- Card de Sugestão 2 -->
+        <div class="sugestao-card">
+          <img src="/static/img/sugestoes/icone-energia.webp" alt="Dica sobre energia">
+          <h3>Otimize o Uso de Energia</h3>
+          <p>
+            Desligue luzes e aparelhos eletrônicos quando não estiverem em uso. Considere substituir lâmpadas incandescentes por modelos LED.
+          </p>
+        </div>
+
+        <!-- Card de Sugestão 3 -->
+        <div class="sugestao-card">
+          <img src="/static/img/sugestoes/icone-residuos.webp" alt="Dica sobre resíduos">
+          <h3>Gerencie Seus Resíduos</h3>
+          <p>
+            Separe os materiais recicláveis e busque postos de coleta seletiva. Reduza o uso de descartáveis e opte por embalagens reutilizáveis.
+          </p>
+        </div>
+
+        <!-- Card de Sugestão 4 -->
+        <div class="sugestao-card">
+          <img src="/static/img/sugestoes/icone-transporte.webp" alt="Dica sobre transporte">
+          <h3>Repense o Transporte</h3>
+          <p>
+            Sempre que possível, escolha caminhar, pedalar ou usar transporte público. Para distâncias maiores, considere caronas ou veículos elétricos.
+          </p>
+        </div>        
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 EcoTrack. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Script para interações futuras -->
+  <script src="/static/js/sugestoes.js"></script>
+</body>
+</html>
