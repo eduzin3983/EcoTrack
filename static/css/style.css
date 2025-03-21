@@ -104,8 +104,25 @@ header nav ul {
 
 header nav ul li a {
     color: white;
+    position: relative;
     text-decoration: none;
     font-weight: 700;
+}
+
+header nav ul li a:not(.btn-primary)::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background-color: #F2A341;
+    transition: width 0.3s ease-in-out;
+}
+
+header nav ul li a:not(.btn-primary):hover::after,
+header nav ul li a:not(.btn-primary).active::after {
+    width: 100%;
 }
 
 header nav ul li a.btn-primary {
