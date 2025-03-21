@@ -30,6 +30,10 @@ def dashboard():
 def registrar():
     return render_template('registro.html')
 
+@app.route('/sugestoes')
+def sugestoes():
+    return render_template('sugestoes.html')
+
 @app.route('/error')
 def error():
     return render_template('erro.html')
