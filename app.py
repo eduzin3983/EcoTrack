@@ -35,7 +35,7 @@ def sugestoes():
     return render_template('sugestoes.html')
 
 @app.route('/historico')
-def sugestoes():
+def historico():
     return render_template('historico.html')
 
 # Rotas de erro
