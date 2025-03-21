@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="/static/css/style.css">
   <link rel="stylesheet" href="/static/css/dashboard.css">
 
+  <!-- Biblioteca Chart.js para o gráfico -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
@@ -39,7 +40,11 @@
     <section class="dashboard-overview">
       <div class="overview-card">
         <h2>Sua Classificação Geral</h2>
-        <p class="classificacao">Médio Impacto</p>
+        <p class="classificacao">
+          Médio Impacto
+          <!-- Ícone de ajuda -->
+          <span class="help-icon" id="helpIcon">?</span>
+        </p>
       </div>
       <div class="quick-access">
         <button onclick="window.location.href='#'">Registrar Dados Diários</button>
@@ -92,11 +97,25 @@
     </section>
   </main>
 
+  <!-- Modal de Ajuda para Classificação -->
+  <div id="helpModal" class="help-modal">
+    <div class="help-modal-content">
+      <span class="close-modal" id="closeHelpModal">&times;</span>
+      <h3>Classificações de Impacto</h3>
+      <p>
+        <strong>Baixo Impacto:</strong> Hábitos sustentáveis, com consumo consciente de recursos.<br><br>
+        <strong>Médio Impacto:</strong> Consumo dentro da média, mas ainda com oportunidades de melhoria.<br><br>
+        <strong>Alto Impacto:</strong> Níveis de consumo acima do ideal, exigindo mudanças mais significativas.
+      </p>
+    </div>
+  </div>
+
   <!-- Rodapé -->
   <footer>
     <p>&copy; 2025 EcoTrack. Todos os direitos reservados.</p>
   </footer>
 
+  <!-- Script do Dashboard -->
   <script src="/static/js/dashboard.js"></script>
 </body>
 </html>
