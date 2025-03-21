@@ -91,6 +91,7 @@
 
 .benefit-item img {
     margin-bottom: 1rem;
+    border-radius: 10px;
 }
 
 .benefit-item h3 {
