@@ -7,8 +7,7 @@ Este é um projeto Flask que permite monitoramento de sustentabilidade pessoal.
 ### 1. Clonar o Repositório
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
+git clone https://github.com/eduzin3983/EcoTrack.git
 ```
 
 ## 2. Criar e Ativar o Ambiente Virtual
