@@ -18,5 +18,9 @@ def sobre():
 def dashboard():
     return render_template('dashboard.html')
 
+@app.route('/error')
+def error():
+    return render_template('erro.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
