@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>EcoTrack - Histórico</title>
+  <link rel="icon" type="image/png" href="/static/img/index/icone-planeta.png">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
+
+  <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="stylesheet" href="/static/css/historico.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="logo">
+      <a href="/dashboard" class="logo-link">
+        <img src="/static/img/index/icone-planeta.png" alt="Ícone de planeta" class="logo-icon">
+        <h1>EcoTrack</h1>
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/dashboard">Dashboard</a></li>
+        <li><a href="/registro">Registrar</a></li>
+        <li><a href="/historico" class="active">Histórico</a></li>
+        <li><a href="/sugestoes">Sugestões</a></li>
+        <li><a href="/logout" class="btn-primary">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main>
+    <!-- Container principal que engloba filtros e tabela -->
+    <section class="historico-container">
+      <h2>Histórico de Registros</h2>
+      <p>Confira seus registros diários e acompanhe a evolução do seu impacto ambiental.</p>
+
+      <!-- Área de Filtros -->
+      <form id="filtroForm" class="filtros-container">
+        <div class="filter-item">
+          <label for="dataInicio">Data Inicial</label>
+          <input type="date" id="dataInicio" name="dataInicio">
+        </div>
+        <div class="filter-item">
+          <label for="dataFim">Data Final</label>
+          <input type="date" id="dataFim" name="dataFim">
+        </div>
+        <div class="filter-item">
+          <label for="ordenar">Ordenar por</label>
+          <select id="ordenar" name="ordenar">
+            <option value="data_desc">Data (Mais recente primeiro)</option>
+            <option value="data_asc">Data (Mais antigo primeiro)</option>
+            <option value="agua">Consumo de Água</option>
+            <option value="energia">Consumo de Energia</option>
+            <option value="residuos">Resíduos Gerados</option>
+            <option value="classificacao">Classificação</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-primary">Aplicar Filtros</button>
+      </form>
+
+      <!-- Tabela de Registros -->
+      <div class="tabela-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Data</th>
+              <th>Água (L)</th>
+              <th>Energia (kWh)</th>
+              <th>Resíduos (kg)</th>
+              <th>% Reciclados</th>
+              <th>Transporte</th>
+              <th>Classificação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2025-03-24</td>
+              <td>180</td>
+              <td>6,5</td>
+              <td>1,5</td>
+              <td>60%</td>
+              <td>Bicicleta</td>
+              <td>Médio Impacto</td>
+            </tr>
+            <tr>
+              <td>2025-03-23</td>
+              <td>200</td>
+              <td>7,0</td>
+              <td>2,0</td>
+              <td>70%</td>
+              <td>Transporte Público</td>
+              <td>Alto Impacto</td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- Mensagem caso não haja registros -->
+        <div id="semRegistros" class="sem-registros" style="display: none;">
+          <p>Nenhum registro encontrado. Comece a registrar seus dados diários!</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 EcoTrack. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="/static/js/historico.js"></script>
+</body>
+</html>
