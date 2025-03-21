@@ -3,10 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Ops... Algo deu errado!</title>
   <link rel="icon" type="image/png" href="/static/img/index/icone-planeta.png">
-
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
   <style>
     body {
@@ -38,7 +36,8 @@
 <body>
   <div class="error-container">
     <h1>Ops... Algo deu errado!</h1>
-    <p>Ocorreu um erro: <strong>404 - Página Não Encontrada</strong></p>
+    <p>Ocorreu um erro: <strong>{{ error_code }} - {{ error_name }}</strong></p>
+    <p>{{ error_description }}</p>
     <p>Por favor, volte e tente novamente.</p>
   </div>
 </body>
