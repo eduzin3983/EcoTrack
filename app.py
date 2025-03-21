@@ -11,7 +11,7 @@ def login():
     return render_template('login.html')
 
 @app.route('/sobre')
-def login():
+def sobre():
     return render_template('sobre.html')
 
 if __name__ == '__main__':
