@@ -30,13 +30,13 @@ def dashboard():
 def registrar():
     return render_template('registro.html')
 
-@app.route('/sugestoes')
-def sugestoes():
-    return render_template('sugestoes.html')
-
 @app.route('/historico')
 def historico():
     return render_template('historico.html')
+
+@app.route('/sugestoes')
+def sugestoes():
+    return render_template('sugestoes.html')
 
 # Rotas de erro
 # Tratamento para erro 404 - Página não encontrada
